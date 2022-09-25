@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6265e17-b1b2-4ae5-999a-367e7c523246" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/app_drawer_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/app_drawer_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/auth_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/auth_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/orders_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/orders_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/user_product_edit_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_product_edit_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/user_product_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/user_product_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

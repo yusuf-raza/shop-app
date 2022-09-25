@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:progress_indicators/progress_indicators.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_app/providers/order_provider.dart';
 import 'package:shop_app/widgets/app_drawer_widget.dart';
@@ -47,7 +48,9 @@ class _OrdersScreenState extends State<OrdersScreen> {
           title: const Text('your orders'),
         ),
         drawer: const AppDrawerWidget(),
-        body: _isLoading ? const Center(child: CircularProgressIndicator()):ListView.builder(
+        body: _isLoading ? Center(child: JumpingDotsProgressIndicator(
+          fontSize: 40,
+        )):ListView.builder(
           itemCount: orders.orderItemsCount(),
           itemBuilder: (context, index) =>
               OrderItemWidget(orderItem: orders.orderItems[index]),

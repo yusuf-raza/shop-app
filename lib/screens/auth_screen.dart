@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:progress_indicators/progress_indicators.dart';
 import 'package:provider/provider.dart';
 
 import '../providers/auth_provider.dart';
@@ -221,7 +222,9 @@ class _AuthCardState extends State<AuthCard> {
                   height: 10,
                 ),
                 if (_isLoading)
-                  const CircularProgressIndicator()
+                   JumpingDotsProgressIndicator(
+                    fontSize: 40,
+                  )
                 else
                   ElevatedButton(
                     onPressed: _submit,

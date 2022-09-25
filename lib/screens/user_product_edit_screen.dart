@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:progress_indicators/progress_indicators.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_app/providers/product_provider.dart';
 import 'package:shop_app/providers/products_provider.dart';
@@ -202,8 +203,10 @@ class _UserProductEditScreenState extends State<UserProductEditScreen> {
         actions: [IconButton(onPressed: _submitForm, icon: const Icon(Icons.save))],
       ),
       body: _isLoading
-          ? const Center(
-              child: CircularProgressIndicator.adaptive(),
+          ?  Center(
+              child: JumpingDotsProgressIndicator(
+                fontSize: 40,
+              ),
             )
           : Padding(
               padding: const EdgeInsets.all(15),
@@ -335,8 +338,8 @@ class _UserProductEditScreenState extends State<UserProductEditScreen> {
                                 if (value!.isEmpty) {
                                   return 'please enter a URL';
                                 }
-                                if (!value.startsWith('http') &&
-                                    !value.startsWith('https')) {
+                                if (!value.startsWith('http:') &&
+                                    !value.startsWith('https:')) {
                                   return 'provide a valid URL';
                                 }
                                 if (!value.endsWith('.jpg') &&

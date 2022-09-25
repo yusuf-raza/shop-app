@@ -212,6 +212,12 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "progress_indicators",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/progress_indicators-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "provider",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/provider-6.0.3",
       "packageUri": "lib/",
@@ -290,7 +296,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-09-25T05:17:56.388257Z",
+  "generated": "2022-09-25T06:25:09.520802Z",
   "generator": "pub",
   "generatorVersion": "2.18.0"
 }

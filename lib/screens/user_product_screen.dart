@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:progress_indicators/progress_indicators.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_app/providers/products_provider.dart';
 import 'package:shop_app/screens/user_product_edit_screen.dart';
@@ -22,7 +23,7 @@ class UserProductScreen extends StatelessWidget {
 
 
 
-    print('looop');
+    //print('looop');
 
     return Scaffold(
       appBar: AppBar(
@@ -41,7 +42,9 @@ class UserProductScreen extends StatelessWidget {
         future: _refreshProducts(context),
         builder: (ctx, snapshot) =>
             snapshot.connectionState == ConnectionState.waiting
-                ? const Center(child: CircularProgressIndicator())
+                ?  Center(child: JumpingDotsProgressIndicator(
+              fontSize: 40,
+            ))
                 : RefreshIndicator(
                     onRefresh: () => _refreshProducts(context),
                     //return Provider.of<ProductsProvider>(context,listen: false).fetchAndSetData(true);
