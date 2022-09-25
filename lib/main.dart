@@ -12,6 +12,7 @@ import 'package:shop_app/screens/product_detail_screen.dart';
 import 'package:shop_app/screens/product_overview_screen.dart';
 import 'package:shop_app/screens/user_product_edit_screen.dart';
 import 'package:shop_app/screens/user_product_screen.dart';
+import 'package:shop_app/utils/themes.dart';
 
 void main() => runApp(const MyApp());
 
@@ -57,18 +58,20 @@ class MyApp extends StatelessWidget {
         //wrapping material app in consumer so that we can rebuild this widget
         //depending on the user authentication status
         child: Consumer<AuthProvider>(
-          builder: (context, authObject, _) => GetMaterialApp(
+          builder: (context, authObject, _) => MaterialApp(
             title: "My Shop",
             //if user is authenticated then ProductsOverviewScreen will be displayed
             //otherwise AuthScreen will be displayed
             home: authObject.isAuth
                 ? const ProductOverviewScreen()
                 : const AuthScreen(),
-            theme: ThemeData(
+            theme: MyAppTheme.myLightThemeData(context),
+            //darkTheme: MyAppTheme.myDarkThemeData(context)
+            /*ThemeData(
                 fontFamily: 'Lato',
                 colorScheme:
                     ColorScheme.fromSwatch(primarySwatch: Colors.purple)
-                        .copyWith(secondary: Colors.orange)),
+                        .copyWith(secondary: Colors.orange))*/
             routes: {
               ProductDetailScreen.routeName: (context) =>
                   const ProductDetailScreen(),
