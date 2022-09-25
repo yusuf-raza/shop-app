@@ -67,11 +67,7 @@ class MyApp extends StatelessWidget {
                 : const AuthScreen(),
             theme: MyAppTheme.myLightThemeData(context),
             //darkTheme: MyAppTheme.myDarkThemeData(context)
-            /*ThemeData(
-                fontFamily: 'Lato',
-                colorScheme:
-                    ColorScheme.fromSwatch(primarySwatch: Colors.purple)
-                        .copyWith(secondary: Colors.orange))*/
+
             routes: {
               ProductDetailScreen.routeName: (context) =>
                   const ProductDetailScreen(),
